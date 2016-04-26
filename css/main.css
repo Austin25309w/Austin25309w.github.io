@@ -94,7 +94,31 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+header, nav {
+    width: 100%;
+    background-color: #66D9EF;
+    
+    }
 
+nav {
+    float: right;
+    
+}
+
+nav li {
+    display: inline;
+    float: left;
+    word-spacing: 10px;
+
+}
+nav a {
+    display: block;
+}
+
+h1 {
+    margin-top: 20px;
+    float:left;
+}
 
 
 
