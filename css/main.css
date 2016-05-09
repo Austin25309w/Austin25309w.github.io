@@ -11,6 +11,7 @@
    ========================================================================== */
 * {
     box-sizing: border-box;
+    
 }
 
 #container{
@@ -44,6 +45,39 @@ html {
  * A better looking default horizontal rule
  */
 
+/*cover page*/
+.coverpage {
+    opacity: 0.7;
+    padding-bottom: 10px;
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+.objective {
+    width: 45%;
+    float: right;
+}
+
+.ABOUT {
+    width: 45%;
+
+}
+
+
+#resume-text {
+    display: inline-block;
+}
+
+.section-inner {
+    display: inline;
+}
+
+/*Resume */
+.education {
+    width: 100%;
+}
+
 hr {
     display: block;
     height: 1px;
@@ -53,19 +87,119 @@ hr {
     padding: 0;
 }
 
+div h1 {
+    text-align: center;
+}
+
 video {
     background-position: center;
-    margin-top: 26px;
+    margin-top: auto;
     height: 700px;
     opacity: .5;
+    padding-top: 10px;
+    display: block;
+}
+
+/*contact me*/
+#CONTACT {
 
 }
 
-svg {
-    color: black;
-    position: fixed;
-    top: 14%;
-    z-index: 1;
+
+
+html, body {
+  background: #f1f1f1;
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+}
+
+h1 {
+  text-align: center;
+  color: #a8a8a8;
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+form input, form textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Merriweather', sans-serif;
+  resize: none;
+}
+
+form input[type="submit"] {
+  color: white;
+  background: #1bb580;
+  cursor: pointer;
+}
+
+form textarea {
+  height: 188px;
+}
+
+.column {
+  float: left;
+  width: 49%;
+  margin-bottom: 1em;
+}
+
+.column:first-of-type {
+  margin-right: 2%;
+}
+
+.message {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  padding: 10px;
+  margin: 25px auto 0;
+  display: block;
+  max-width: 600px;
+/*  border-radius: 8px;*/
+  display: none;
+  color: white;
+}
+
+.error {
+  padding-left: 20px;
+  background-color: #fc5846;
+}
+
+.error li:before {
+  content: '- ';
+}
+
+.error li:first-child:before {
+  content: '';
+}
+
+.error li:first-child {
+  margin-left: 0;
+  content: '';
+}
+
+.error li {
+  margin-left: 40px;
+}
+
+li {
+  list-style: none;
+}
+ 
+.success {
+  background-color: #1bb580;
+}
+ 
+.error.visible, .success.visible {
+  display: block;    
 }
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -114,6 +248,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+    margin: 0;
+}
+
 span a {
     
     float: right;
@@ -126,20 +264,13 @@ header {
     height:30px;
 }
 
-header, nav {
+nav {
     
     background-color: #525252;
     padding: 0px;
-    
-    }
-
-
-nav {
+    width: 100%;
     float: right;
     margin: 0;
-    padding: 0;
-
-
 }
 
 ul {
@@ -151,6 +282,7 @@ ul {
     display: inline;
     word-spacing: 10px;
     text-align: right;
+    
     
     padding: 20px 15px;
     
@@ -217,15 +349,25 @@ h1 {
     height: 60px;
 }
 
-nav .active{
-    border-top: 2px solid#F07057;
-}
+
 
 .scrolled {
 position: fixed;
 top:0;
 width: 100%;
 }
+
+/*Smooth Scrolling */
+
+section {
+    height: 1000px;
+    display: block;
+    width: 100%;
+}
+.section-inner {
+    display: inline;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -289,7 +431,7 @@ footer{
     
     clear:both;
     background-color: #525252;
-    height:180px;
+    height:30px;
     width: 100%;
 }
 footer div li {
@@ -410,5 +552,19 @@ footer div li {
     h2,
     h3 {
         page-break-after: avoid;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .coverpage {
+        width: 100%;
+    }
+    
+    video {
+        width: 100%;
+    }
+
+    .hamburger-icon {
+        display: block;
     }
 }
