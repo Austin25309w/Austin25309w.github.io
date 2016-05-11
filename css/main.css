@@ -20,7 +20,7 @@
 html {
     color: #222;
     font-size: 1em;
-    line-height: 1.1;
+    
 }
 
 /*
@@ -47,10 +47,55 @@ html {
 
 /*cover page*/
 .coverpage {
-    padding-bottom: 10px;
-    display: block;
-    width: 100%;
-    padding: 0;
+  position: absolute;
+  top: 0;
+  background-image: url(../img/code_img1.jpg);
+  padding-bottom: 10px;
+  display: block;
+  padding: 0;
+   width: 100%;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.coverpage-overlay {
+  position: absolute;
+  top: 0;
+  padding-bottom: 10px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  opacity: 0.8;
+  background-color: rgba(26, 30, 35, 0.5);
+  z-index: 1;
+}
+
+#main-nav {
+  height: 75px;
+}
+
+.frontend {
+  color: #66D9EF;
+}
+.webdeveloper {
+  color: #68C3A3;
+
+}
+#FEWD {
+  display:block;
+  text-align: center;
+ /* padding:100px;
+  margin: 100px;
+  position:absolute;
+  z-index:1;*/
+}
+.intro-sub p {
+  display:block;
+  color: red;
 }
 
 .objective {
@@ -61,6 +106,16 @@ html {
 .ABOUT {
     width: 45%;
 
+}
+
+.intro-sub {
+  text-align: center;
+  width:100%;
+  padding-top: 400px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  position:absolute;
+  z-index:1;
 }
 
 
@@ -74,6 +129,9 @@ html {
 }
 
 /*Resume */
+#RESUME {
+  text-align: center;
+}
 .education {
     width: 100%;
 }
@@ -264,7 +322,6 @@ span a {
 }
 
 header {
-    height:30px;
 }
 
 nav {
@@ -310,7 +367,7 @@ h1 {
 /*---------------------hamburger menu--------------------------*/
 
 .hamburger-icon {
-    margin-top: 10px;
+    margin-top: -5px;
     margin-right: 5px;
     width: 2.5rem;
     display: block;
@@ -365,6 +422,7 @@ width: 100%;
 section {
     display: block;
     width: 100%;
+    padding-bottom: 400px;
 
 }
 .section-inner {
@@ -560,9 +618,13 @@ footer div li {
 }
 
 @media screen and (max-width: 600px) {
-    .coverpage {
-        width: 100%;
-    }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+  
+}
     
     video {
         width: 100%;
