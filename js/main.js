@@ -31,14 +31,16 @@ $('nav a').on('click', function(e) {
 	//  use 
 	$('body').animate({
 		scrollTop:targetOffset
-	}, 600);
+	}, 700);
 
 });
 	 /*scroll cover page*/
 
+console.log(navDistance);
+
 
 var navDistance = $('#main-nav').offset().top;
-console.log( 'The navDistance is : ' + navDistance);
+console.log( 'The navDistance is :' + navDistance);
 
 $(window).scroll(function() {
     var scrollDistance = $(window).scrollTop();
