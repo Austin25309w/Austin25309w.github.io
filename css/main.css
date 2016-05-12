@@ -19,7 +19,7 @@
   }
   html {
     color: #222;
-    font-size: 1em;
+    /*font-size: 1em;*/
     
   }
 
@@ -54,12 +54,11 @@
   display: block;
   padding: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   z-index: 0;
-  min-height: 500px;
 }
 
 .coverpage-overlay {
@@ -70,15 +69,13 @@
   width: 100%;
   padding: 0;
   height: 100%;
-  opacity: 0.8;
-  background-color: rgba(26, 30, 35, 0.5);
+  background-color: rgba(26, 30, 35, 0.8);
   z-index: 1;
-  height: 100vh;
-  min-height: 500px;
 }
 
 #main-nav {
   height: 75px;
+  opacity: 0.8;
 }
 
 .frontend {
@@ -106,33 +103,46 @@
   font-weight: bold;
 }
 
-.objective {
-  width: 45%;
-  float: right;
-}
 
 .HOME  {
-  padding-bottom: 600px;
-}
+  height: 900px;
+  }
 
 
 /*ABOUT section */
 #ABOUT {
   width: 100%;
   font-size: 20px;
+  margin-top:412px;
+}
+
+.obj {
+  text-align: center;
 }
 
 .column-left {
   float: left;
-  width: 30%
-  margin: 800px;
+  width: 40%;
+  margin: 80px;
 }
 
 .column-right {
   float: left;
-  width: 30%
+  width: 45%;
   border: 2px solid #E2E1D9;
   margin-top: 100px;
+  padding: 26px;
+  padding-bottom: 30px;
+  margin-left: 0;
+}
+
+img {
+  width: 300px;
+  margin-left: 150px;
+  border-radius: 100px;
+}
+li {
+  font-weight: lighter;
 }
 
 .intro-sub {
@@ -143,12 +153,12 @@
   font-size: 18px;
   position:absolute;
   z-index:1;
-  transform:translateY(-50%);
 }
 
 
 #resume-text {
-  display: inline-block;
+  margin-top: 373px;
+  text-align: center;
 }
 
 .section-inner {
@@ -159,8 +169,15 @@
 /*Resume */
 #RESUME {
   text-align: center;
+  width: 100%;
+  margin-top:200px;
 }
 .education {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.section3 {
   width: 100%;
 }
 
@@ -177,7 +194,7 @@ div h1 {
   text-align: center;
 }
 
-video {
+/*video {
   background-position: center;
   margin-top: auto;
   height: 700px;
@@ -185,19 +202,20 @@ video {
   padding-top: 10px;
   display: block;
 }
-
+*/
 /*contact me*/
-#CONTACT {
-
-}
 
 
 
-html, body {
+
+
+
+html {
   background: #f1f1f1;
   font-family: 'Merriweather', sans-serif;
 }
 
+    
 h1 {
   text-align: center;
   color: #a8a8a8;
@@ -223,7 +241,7 @@ form input, form textarea {
 
 form input[type="submit"] {
   color: white;
-  background: #1bb580;
+  background: #66D9EF;
   cursor: pointer;
 }
 
@@ -231,10 +249,14 @@ form textarea {
   height: 188px;
 }
 
-.column {
-  float: left;
-  width: 49%;
+#contact {
+  text-align: center;
+}
+
+.form1 {
+  width: 100%;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .column:first-of-type {
@@ -247,8 +269,8 @@ form textarea {
   padding: 10px;
   margin: 25px auto 0;
   display: block;
-  max-width: 600px;
-  /*  border-radius: 8px;*/
+  /*max-width: 100%;*/
+/*  border-radius: 8px;*/
   display: none;
   color: white;
 }
@@ -278,11 +300,11 @@ form textarea {
 li {
   list-style: none;
 }
-
+ 
 .success {
   background-color: #1bb580;
 }
-
+ 
 .error.visible, .success.visible {
   display: block;    
 }
@@ -450,7 +472,7 @@ li {
   section {
     display: block;
     width: 100%;
-    height: 771px;
+    height: 800px;
     margin-top: 100px;
     padding-top: 100px;
 
@@ -640,6 +662,7 @@ footer div li {
     h3 {
       orphans: 3;
       widows: 3;
+      text-indent: 50px;
     }
 
     h2,
@@ -648,20 +671,73 @@ footer div li {
     }
   }
 
-  @media screen and (max-width: 600px) {
-
+  @media screen and (max-width: 950px) {
+  /*.coverpage {
+    max-width: 100%;
   }
-
+  .coverpage-overlay {
+    max-width: 100%;*/
+  }
   @media screen and (max-width: 480px) {
-
+  .column-left  {
+    width: 100%
+    padding:20px;
 
   }
 
-  video {
+  .column-right {
+    width:100%;
+    padding: 20px;
+  }
+
+  }
+  .form1 {
     width: 100%;
+    padding: 20px;
+
   }
+
+  /*video {
+    width: 100%;
+  }*/
 
   .hamburger-icon {
     display: block;
   }
+
+  .obj {
+    padding: 0;
+  }
+  section {
+    height: auto;
+  }
+
+
+.frontend {
+  color: #66D9EF;
+  font-size: 60px;
+  opacity: 1;
+  padding-top: 0;
 }
+.webdeveloper {
+  color: #68C3A3;
+  font-size: 60px;
+  padding-top: 0;
+}
+
+#main-nav {
+  /*display: none;*/
+}
+
+.intro-sub {
+  padding-top:100px;
+}
+
+.section3 {
+  padding: 20px;
+}
+
+#ABOUT {
+  padding-top: 0;
+}
+
