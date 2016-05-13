@@ -689,6 +689,7 @@ footer div li {
   .column-left  {
     width: 100%;
     padding:20px;
+    margin-left: 0;
 
   }
 
@@ -759,10 +760,21 @@ footer div li {
 }
 
 .menu {
-  height: 0;
+  height: 300px;
   overflow: hidden;
   transition: height 0.3s;
 
+
+}
+.menu li {
+  display: block;
+  width:100%;
+  background-color: #717171;
+
+}
+.menu ul{
+  width: 100%;
+  background-color: #717171;
 }
 .open {
   height: 295px;
