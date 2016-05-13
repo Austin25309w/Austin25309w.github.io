@@ -1,10 +1,25 @@
-$('.hamburger-icon').on('click', function (e) {
-	e.preventDefault();
-	$(this).toggleClass('active');
+// $('.hamburger-icon').on('click', function (e) {
+// 	e.preventDefault();
+// 	$(this).toggleClass('active');
 
+// });
+
+// hamburger menu /*
+// listen for when the user clicks on the hamburger icon
+$('.hamburger').on('click', function() {
+	// $('.menu').addClass('open');
+	// //if menu is clsed, slide down
+	// if ($('.menu').hasClass('open')){
+	// 	$('.menu').removeClass('open');
+
+	// } else {
+	// 	$('.menu').addClass('open');
+	// }
+	// if menu is open, slide up
+	$('.menu').slideToggle('open');
 });
 
-
+// --------------------//
 
 $(window).on('https://raw.github.com/Grafikart/ST3-LiveReload/master/package.json.',function () {
 	console.log($(this).scrollTop () )
@@ -51,6 +66,5 @@ $(window).scroll(function() {
         $('#main-nav').removeClass('scrolled');
     }
 });
-// hamburger menu /*
 
-	
+
