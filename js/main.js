@@ -19,6 +19,18 @@ $('.hamburger').on('click', function(e) {
 	$('.menu').toggleClass('slide-down');
 });
 
+
+$(function(){
+  
+  $("#js-hamburger").on("click", function(){
+    $(this).toggleClass('is-active');
+  });
+
+});
+
+
+
+
 // --------------------//
 
 $(window).on('https://raw.github.com/Grafikart/ST3-LiveReload/master/package.json.',function () {
@@ -66,5 +78,6 @@ $(window).scroll(function() {
         $('#main-nav').removeClass('scrolled');
     }
 });
+
 
 
