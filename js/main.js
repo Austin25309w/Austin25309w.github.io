@@ -6,17 +6,17 @@
 
 // hamburger menu /*
 // listen for when the user clicks on the hamburger icon
-$('.hamburger').on('click', function() {
+$('.hamburger').on('click', function(e) {
 	// $('.menu').addClass('open');
 	// //if menu is clsed, slide down
 	// if ($('.menu').hasClass('open')){
 	// 	$('.menu').removeClass('open');
-
+	e.preventDefault();
 	// } else {
 	// 	$('.menu').addClass('open');
 	// }
 	// if menu is open, slide up
-	$('.menu').slideToggle('open');
+	$('.menu').toggleClass('slide-down');
 });
 
 // --------------------//
