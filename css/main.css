@@ -74,7 +74,7 @@
 }
 
 #main-nav {
-  height: 75px;
+  height: 60px;
   opacity: 0.8;
 }
 .menu {
@@ -403,9 +403,7 @@ li {
     display: inline;
     word-spacing: 10px;
     text-align: right;
-    
-    
-    padding: 20px 15px;
+    padding: 20px 21px 20px 21px;
     
   }
 
@@ -413,11 +411,12 @@ li {
     text-decoration: none;
     color: #66D9EF;
     padding-right: 10px;
+    margin: 8px;
   }
 
   nav li:hover {
-    background-color:#ffffff;
-    /*line-height: 50px;*/
+    color: #ffffff;
+    
   }
 
 
@@ -781,12 +780,11 @@ footer div li {
 .slide-down {
   height: 275px;
   margin: 0;
-
+  padding: 0;
+  text-align: center;
 }
 
-.clearfix menu {
-  margin: 0;
-}
+
 
 h1 {
   margin-top: 17px;
@@ -806,4 +804,19 @@ nav ul {
   height: 75px;
   opacity: 0.9;
 
+}
+
+.menu {
+  margin: 0;
+  text-align: center;
+}
+
+nav li:hover {
+    width: 100%;
+    background-color: #ffffff;
+    
+}
+
+#HOME {
+  padding:10px;
 }
